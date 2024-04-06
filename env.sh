@@ -1,13 +1,13 @@
 # IP and port of etcd cluster
-export ETCD1_IP="192.168.1.102"
-export ETCD2_IP="192.168.1.103"
-export ETCD3_IP="192.168.1.101"
+export ETCD1_IP="192.168.1.110"
+export ETCD2_IP="192.168.1.111"
+export ETCD3_IP="192.168.1.112"
+export ETCD4_IP="192.168.1.113"
+export ETCD5_IP="192.168.1.114"
 export ETCD_PORT=2379
 
 # IPs of master nodes
-export MASTER1_IP="192.168.1.101"
-export MASTER2_IP="192.168.1.102"
-export MASTER3_IP="192.168.1.103"
+export MASTER1_IP="192.168.1.110"
 
 # TLS Bootstrapping Token
 # $(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c32;)
@@ -24,7 +24,7 @@ export CLUSTER_CIDR="172.30.0.0/16"
 export NODE_PORT_RANGE="30000-32766"
 
 # etcd cluster addresses 
-export ETCD_ENDPOINTS="https://$ETCD1_IP:$ETCD_PORT,https://$ETCD2_IP:$ETCD_PORT,https://$ETCD3_IP:$ETCD_PORT"
+export ETCD_ENDPOINTS="https://$ETCD1_IP:$ETCD_PORT,https://$ETCD2_IP:$ETCD_PORT,https://$ETCD3_IP:$ETCD_PORT,https://$ETCD4_IP:$ETCD_PORT,https://$ETCD5_IP:$ETCD_PORT"
 
 # flanneld etcd prefix
 export FLANNEL_ETCD_PREFIX="/kubernetes/network"

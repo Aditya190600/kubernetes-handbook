@@ -5,7 +5,7 @@ This is a handbook to setup a Kubernetes cluster from scratch and is for someone
 If all you need is to have a proper setup cluster, then Kubeadm is an easy to use tool to setup a cluster. If you want to have a deep understanding of all different components of Kubernetes, then setting up a cluster from scratch is definitely a good way to learn.
 
 ## Component Versions and Cluster Environment
-- Centos 7.3
+- Debian 12
 - Kubernetes 1.9.2
 - Docker 1.13.1
 - etcd 3.2.9
@@ -15,17 +15,18 @@ Etcd cluster
 
 | IP Address	| Hostname  |
 |---------------|-----------|
-| 192.168.1.102	| etcd1     |
-| 192.168.1.103	| etcd2     |
-| 192.168.1.101	| etcd3     |
+| 192.168.1.110	| etcd1     |
+| 192.168.1.111	| etcd2     |
+| 192.168.1.112	| etcd3     |
+| 192.168.1.113 | etcd4     |
+| 192.168.1.114 | etcd5     |
 
 Master nodes
 
 | IP Address	| Role      |
 |---------------|-----------|
 | 192.168.1.101	| master1   |
-| 192.168.1.102	| master2   |
-| 192.168.1.103	| master3   |
+
 
 Disable firewalld on all servers:
 ```shell
